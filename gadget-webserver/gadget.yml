@@ -9,7 +9,6 @@ services:
   image: 
   directory: "./"
   net: "host"
-  pid: ""
   readonly: false
   command: ["/usr/sbin/nginx", "-g", "'daemon off;'"]
   binds: []

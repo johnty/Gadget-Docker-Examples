@@ -11,10 +11,10 @@ import (
 var (
 	CHIPPRO_GPIO_ROOT = "/sys/class/gpio"
 	CHIPPRO_GPIO_EXPO = "/sys/class/gpio/export"
-	CHIPPRO_GPIO_P_NO = "132"
-	CHIPPRO_GPIO_P_D0 = "/sys/class/gpio/gpio132"
-	CHIPPRO_GPIO_DIRE = "/sys/class/gpio/gpio132/direction"
-	CHIPPRO_GPIO_VALU = "/sys/class/gpio/gpio132/value"
+	CHIPPRO_GPIO_P_NO = "133"
+	CHIPPRO_GPIO_P_D0 = "/sys/class/gpio/gpio133"
+	CHIPPRO_GPIO_DIRE = "/sys/class/gpio/gpio133/direction"
+	CHIPPRO_GPIO_VALU = "/sys/class/gpio/gpio133/value"
 )
 
 func pathExists(path string) (bool, error) {

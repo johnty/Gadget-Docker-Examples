@@ -2,7 +2,7 @@ import CHIP_IO.GPIO as GPIO
 from time import sleep
 
 
-ledPin = "CSID0"
+ledPin = "CSID3"
 
 GPIO.setup(ledPin, GPIO.OUT)
 

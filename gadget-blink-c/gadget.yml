@@ -9,7 +9,6 @@ services:
   image: 
   directory: "./"
   net: ""
-  pid: ""
   readonly: false
   command: []
   binds: ['/sys:/sys']

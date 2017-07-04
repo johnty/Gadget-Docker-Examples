@@ -4,10 +4,10 @@ const fs = require('fs')
 
 const CHIPPRO_GPIO_ROOT = '/sys/class/gpio'
 const CHIPPRO_GPIO_EXPO = '/sys/class/gpio/export'
-const CHIPPRO_GPIO_P_NO = '132'
-const CHIPPRO_GPIO_P_D0 = '/sys/class/gpio/gpio132'
-const CHIPPRO_GPIO_DIRE = '/sys/class/gpio/gpio132/direction'
-const CHIPPRO_GPIO_VALU = '/sys/class/gpio/gpio132/value'
+const CHIPPRO_GPIO_P_NO = '134'
+const CHIPPRO_GPIO_P_D0 = '/sys/class/gpio/gpio134'
+const CHIPPRO_GPIO_DIRE = '/sys/class/gpio/gpio134/direction'
+const CHIPPRO_GPIO_VALU = '/sys/class/gpio/gpio134/value'
 
 // check if gpio root exists
 fs.readdir(CHIPPRO_GPIO_ROOT, (err, files) => {

@@ -9,7 +9,6 @@ services:
   image: ""
   directory: "./"
   net: ""
-  pid: ""
   readonly: false
   command: ['python','blink.py']
   binds: ['/sys:/sys']

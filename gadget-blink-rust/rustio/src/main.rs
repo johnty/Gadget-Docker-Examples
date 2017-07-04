@@ -7,10 +7,10 @@ use std::{thread, time};
 
 static CHIPPRO_GPIO_ROOT: &'static str = "/sys/class/gpio";
 static CHIPPRO_GPIO_EXPO: &'static str = "/sys/class/gpio/export";
-static CHIPPRO_GPIO_P_NO: &'static str = "132";
-static CHIPPRO_GPIO_P_D0: &'static str = "/sys/class/gpio/gpio132";
-static CHIPPRO_GPIO_DIRE: &'static str = "/sys/class/gpio/gpio132/direction";
-static CHIPPRO_GPIO_VALU: &'static str = "/sys/class/gpio/gpio132/value";
+static CHIPPRO_GPIO_P_NO: &'static str = "136";
+static CHIPPRO_GPIO_P_D0: &'static str = "/sys/class/gpio/gpio136";
+static CHIPPRO_GPIO_DIRE: &'static str = "/sys/class/gpio/gpio136/direction";
+static CHIPPRO_GPIO_VALU: &'static str = "/sys/class/gpio/gpio136/value";
 
 fn main() {
 	
