@@ -6,10 +6,10 @@
 
 #define CHIPPRO_GPIO_ROOT "/sys/class/gpio"
 #define CHIPPRO_GPIO_EXPO "/sys/class/gpio/export"
-#define CHIPPRO_GPIO_P_NO "132"
-#define CHIPPRO_GPIO_P_D0 "/sys/class/gpio/gpio132"
-#define CHIPPRO_GPIO_DIRE "/sys/class/gpio/gpio132/direction"
-#define CHIPPRO_GPIO_VALU "/sys/class/gpio/gpio132/value"
+#define CHIPPRO_GPIO_P_NO "135"
+#define CHIPPRO_GPIO_P_D0 "/sys/class/gpio/gpio135"
+#define CHIPPRO_GPIO_DIRE "/sys/class/gpio/gpio135/direction"
+#define CHIPPRO_GPIO_VALU "/sys/class/gpio/gpio135/value"
 
 int dir_exists(DIR* test_dir){
 	
