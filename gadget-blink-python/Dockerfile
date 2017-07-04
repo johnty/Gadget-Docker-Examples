@@ -1,12 +1,6 @@
 # Base image is arm32v7 Alpine Linux on Docker Hub
 FROM armhf/alpine
 
-# Set and create a working directory called app
-WORKDIR /app
-
-# Copy the contents of the current directory into the working directory
-ADD . /app
-
 # Install tools needed to download and build the CHIP_IO library from source.
 RUN apk update && apk add bison \
 						  flex \
@@ -46,4 +40,11 @@ RUN apk update && apk add bison \
 				git \
 				make 
 
+
+# Set and create a working directory called app
+WORKDIR /app
+
+# Copy the contents of the current directory into the working directory
+ADD . /app				
+				
 CMD ["python", "blink.py"]

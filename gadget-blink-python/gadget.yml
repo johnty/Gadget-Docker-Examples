@@ -12,5 +12,5 @@ services:
   readonly: false
   command: ['python','blink.py']
   binds: ['/sys:/sys']
-  capabilities: []
-  devices: []
+  capabilities: ['SYS_RAWIO']
+  devices: ['/dev/mem']
