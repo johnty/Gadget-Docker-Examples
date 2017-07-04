@@ -1,10 +1,10 @@
 spec: "0.0"
-name: gadgetcli
+name: gadget-webserver
 uuid: f21c0e33-7112-4ba9-b955-d896ca8a3e1e
-type: catgif
+type: docker
 onboot:
 services:
-- name: catgif
+- name: gadget-webserver
   uuid: d7e1ebf8-977b-4119-9f3f-5a0203a549c9
   image: 
   directory: "./"

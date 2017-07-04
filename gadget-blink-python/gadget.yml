@@ -1,10 +1,10 @@
 spec: "0.0"
-name: blink
+name: gadget-blink-python
 uuid: a6c6f893-f34c-49d4-8b48-7d01b1f41b5f
 type: docker
 onboot:
 services:
-- name: blink
+- name: gadget-blink-python
   uuid: 96e5ceef-a712-4aa4-a57e-4d28a9531706
   image: ""
   directory: "./"
@@ -13,5 +13,5 @@ services:
   readonly: false
   command: ['python','blink.py']
   binds: ['/sys:/sys']
-  capabilities: [SYS_RAWIO]
-  devices: [/dev/mem]
+  capabilities: []
+  devices: []
