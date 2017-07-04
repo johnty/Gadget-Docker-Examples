@@ -1,0 +1,61 @@
+spec: "0.0"
+name: gadget-blink-multi
+uuid: 91c4e3b2-5223-4ed8-acd7-d3147c96fdce
+type: docker
+onboot:
+- name: blink-c
+  uuid: 91602483-0aa5-426a-8648-fcf12bf251ef
+  image: nextthingco/gadget-blink-c
+  directory: ""
+  net: ""
+  pid: ""
+  readonly: false
+  command: []
+  binds: ['/sys:/sys']
+  capabilities: []
+  devices: []
+- name: blink-go
+  uuid: 9d322cda-f720-430b-9ba2-c23ef2849e33
+  image: nextthingco/gadget-blink-go
+  directory: ""
+  net: ""
+  pid: ""
+  readonly: false
+  command: []
+  binds: ['/sys:/sys']
+  capabilities: []
+  devices: []
+services:
+- name: blink-node
+  uuid: 0fed5048-363e-4295-9db3-824ce6ce3fa9
+  image: nextthingco/gadget-blink-node
+  directory: ""
+  net: ""
+  pid: ""
+  readonly: false
+  command: []
+  binds: ['/sys:/sys']
+  capabilities: []
+  devices: []
+- name: blink-rust
+  uuid: e6bf6e81-ff01-4918-a8f0-790986d6cb37
+  image: nextthingco/gadget-blink-rust
+  directory: ""
+  net: ""
+  pid: ""
+  readonly: false
+  command: []
+  binds: ['/sys:/sys']
+  capabilities: []
+  devices: []
+- name: blink-python
+  uuid: ceaee87f-b396-4dfe-b67a-317c1e643730
+  image: nextthingco/gadget-blink-python
+  directory: ""
+  net: ""
+  pid: ""
+  readonly: false
+  command: []
+  binds: ['/sys:/sys']
+  capabilities: ['SYS_RAWIO']
+  devices: ['/dev/mem']
