@@ -16,7 +16,7 @@ Written in [Golang](https://golang.org/).
 - `command: []`
   - The container's command was previously set in the Dockerfile, so the value remains empty here.
 
-#### gpio.c:
+#### gpio.go:
 - Each file and directory is checked to be sure the required filesystem items are available before accessing them.
 - All fatal failures return the exit code (1), ensuring that a container created as a `service` will be automatically restarted.
 - Further documentation can be found in the comments of the [source itself](https://github.com/NextThingCo/Gadget-Docker-Examples/blob/master/gadget-blink-go/gpio.go)
