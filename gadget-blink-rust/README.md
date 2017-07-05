@@ -9,8 +9,8 @@ Written in [Rustlang](https://www.rust-lang.org/en-US/).
 5. The source directory is copied into the image.
 6. A configuration file is created for `cargo` to set the desired gcc toolchain for the armv7 target.
 7. The source is compiled with `cargo build --target=armv7-unknown-linux-gnueabihf --release`
-4. After the first image is successfully built, the second container is created from `arm32v7/debian:stretch-slim` (since we're using the gcc toolchain, a container with libc is still required).
-5. The `gpio` binary is copied from the first image (image `0`).
+8. After the first image is successfully built, the second container is created from `arm32v7/debian:stretch-slim` (since we're using the gcc toolchain, a container with libc is still required).
+9. The `gpio` binary is copied from the first image (image `0`).
 
 #### gadget.yml:
 - `directory: "./"`
