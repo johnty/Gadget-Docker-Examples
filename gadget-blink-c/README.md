@@ -2,7 +2,7 @@
 A gnu89 compatible C example of GPIO usage, easily translatable to C++. 
 
 #### Dockerfile:
-1. Using Docker's new [multi-stage build](https://docs.docker.com/engine/userguide/eng-image/multistage-build/) mechanism, this project starts with the cross-building toolchain package `crossbuild-essential-armhf`.
+1. Using Docker's new [multi-stage build](https://docs.docker.com/engine/userguide/eng-image/multistage-build/) mechanism, this project starts the `debian:stretch-slim` image, and uses the cross-building toolchain package `crossbuild-essential-armhf`.
 2. The source content is copied into the container.
 3. The source is compiled with the `arm-linux-gnueabihf-gcc` compiler
   - The `static` flag is given to build all dependencies into the binary, this permits the final container to be built from scratch.
@@ -17,6 +17,8 @@ A gnu89 compatible C example of GPIO usage, easily translatable to C++.
   - Specifies to build the container from the `Dockerfile` in the current directory.
 - `binds: ['/sys:/sys']`
   - Mounts the sysfs files required for accessing the filesystem representations of the GPIO pins.
+- `command: []`
+  - The container's command was previously set in the Dockerfile, so the value remains empty here.
 
 #### gpio.c:
 - Each file and directory is checked to be sure the required filesystem items are available before accessing them.
