@@ -1,7 +1,7 @@
 # Gadget-Docker-Examples
 Collection of Examples for GadgetOS used with Docker
 
-## GPIO blinking examples:
+#### GPIO blinking examples:
 - [gadget-blink-c     ](https://github.com/NextThingCo/Gadget-Docker-Examples/tree/master/gadget-blink-c)
   - A gnu89 compatible C example of GPIO usage, easily translatable to C++. 
 - [gadget-blink-go    ](https://github.com/NextThingCo/Gadget-Docker-Examples/tree/master/gadget-blink-go)
@@ -15,6 +15,6 @@ Collection of Examples for GadgetOS used with Docker
 - [gadget-blink-multi ](https://github.com/NextThingCo/Gadget-Docker-Examples/tree/master/gadget-blink-multi)
   - A demonstration of a multiple-container project running all of the above examples at once.
 
-## Webapps:
+#### Webapps:
 - [gadget-webserver   ](https://github.com/NextThingCo/Gadget-Docker-Examples/tree/master/gadget-blink-multi)
   - Simple example of how to host web content from your device.
