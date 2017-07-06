@@ -16,5 +16,5 @@ Collection of Examples for GadgetOS used with Docker
   - A demonstration of a multiple-container project running all of the above examples at once.
 
 #### Webapps:
-- [gadget-webserver   ](https://github.com/NextThingCo/Gadget-Docker-Examples/tree/master/gadget-blink-multi)
+- [gadget-webserver   ](https://github.com/NextThingCo/Gadget-Docker-Examples/tree/master/gadget-webserver)
   - Simple example of how to host web content from your device.
