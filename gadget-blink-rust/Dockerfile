@@ -12,7 +12,7 @@ RUN rustup target add armv7-unknown-linux-gnueabihf
 COPY rustio /build/rustio
 WORKDIR /build/rustio
 
-RUN mkdir /.cargo && \
+RUN mkdir /root/.cargo && \
   echo "[target.armv7-unknown-linux-gnueabihf]\nlinker = \"arm-linux-gnueabihf-gcc\"" >> /root/.cargo/config
 
 RUN cargo build --target=armv7-unknown-linux-gnueabihf --release

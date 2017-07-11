@@ -1,0 +1,16 @@
+spec: "0.0"
+name: gadget-vu-meter
+uuid: 69185d5d-b178-41a0-8abb-3f310b2da451
+type: docker
+onboot: []
+services:
+- name: gadget-vu-meter
+  uuid: 34022f56-00ff-47b4-adea-c9628b221be0
+  image:
+  directory: "./"
+  net: ""
+  readonly: false
+  command: ['python', 'vu-meter.py']
+  binds: ['/sys:/sys']
+  capabilities: ['SYS_RAWIO']
+  devices: ['/dev/mem', '/dev/snd']
