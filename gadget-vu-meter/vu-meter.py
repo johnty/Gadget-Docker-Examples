@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import CHIP_IO.GPIO as gpio
+import CHIP_IO.Utilities as ut
 import alsaaudio
 import audioop
 import math
@@ -17,6 +18,8 @@ val_max = len(pinmap)/2
 val_min = 0
 pinid = "CSID{0}"
 retry=10
+
+ut.unexport_all()
 
 for x in pinmap:
 	gpio.setup(pinid.format(x), gpio.OUT)
