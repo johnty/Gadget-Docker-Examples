@@ -10,6 +10,7 @@ RUN apk update && \
 	apk add g++ && \
 	apk add make && \
 	apk add alsa-lib-dev && \
+	apk add python-dev && \
 	apk add py2-pip && \
 	pip install --upgrade pip && \
 	pip install pyalsaaudio && \
