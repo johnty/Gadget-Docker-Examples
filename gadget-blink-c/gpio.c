@@ -3,6 +3,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include "mapper/mapper.h"
 
 #define CHIPPRO_GPIO_ROOT "/sys/class/gpio"
 #define CHIPPRO_GPIO_EXPO "/sys/class/gpio/export"
